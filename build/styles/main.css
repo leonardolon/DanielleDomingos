@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F8F9FB;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding-bottom: 24px;
+}
+header .profile-avatar {
+  width: 200px;
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio-name {
+  font-family: "Dosis", sans-serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.profile-bio-sub {
+  font-family: "Dosis", sans-serif;
+  opacity: 70%;
+}
+.projects-list {
+  margin-top: 16px;
+  display: block;
+}
+.projects-list-item {
+  align-items: center;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #F8F9FB;
+  padding: 16px 20px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+  border-color: black;
+  border: 1px solid;
+  transition: all ease 0.3s;
+  font-family: "Dosis", sans-serif;
+}
+.projects-list-item a:hover {
+  color: #777;
+}
+.projects-list-item img {
+  padding: 0 20px;
+}

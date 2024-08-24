@@ -1,0 +1,102 @@
+@import "variaveis.less";
+
+@breakpointTablet: ~"(max-width: 1023px)";
+@breakpointMobile: ~"(min-width: 768px) and (max-width: 767px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: @corDeFundo;
+    color: @corDosTextos;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
+
+    @media @breakpointTablet {
+        
+        max-width: 80%;
+    }
+
+    @media @breakpointMobile {
+        
+        max-width: 70%;
+    }
+    
+}
+
+header {
+    padding-bottom: 24px;
+
+    .profile-avatar {
+        width: 200px;
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+    }
+}
+
+.profile-bio {
+    text-align: center;
+
+    &-name {
+        font-family: "Dosis", sans-serif;
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    &-sub {
+        font-family: "Dosis", sans-serif;
+        opacity: 70%;
+    }
+}
+
+.projects-list{    
+    margin-top: 16px;
+    display: block;
+
+    &-item {
+        align-items: center;
+
+        a {
+            
+            text-align: center;
+            
+            text-decoration: none;
+            background-color: @corDeFundo;
+            padding: 16px 20px;
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+            color: @corDosTextos;
+            border-color: black;
+            border: 1px solid;
+            transition: all ease .3s;
+            font-family: "Dosis", sans-serif;
+
+            &:hover{
+                color: #777;
+            }
+        }
+
+        img{
+            padding: 0 20px;
+        }
+
+    }
+}
