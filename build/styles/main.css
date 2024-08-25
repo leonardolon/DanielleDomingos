@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #F8F9FB;
+  background-color: #DBCDCB;
   color: #000;
 }
 li {
   list-style: none;
 }
 .container {
-  max-width: 1024px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -32,10 +32,11 @@ header {
   padding-bottom: 24px;
 }
 header .profile-avatar {
-  width: 200px;
+  padding: 16px;
+  width: 250px;
   display: block;
   margin: 0 auto 24px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .profile-bio {
   text-align: center;
@@ -51,7 +52,6 @@ header .profile-avatar {
 }
 .projects-list {
   margin-top: 16px;
-  display: block;
 }
 .projects-list-item {
   align-items: center;

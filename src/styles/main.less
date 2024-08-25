@@ -20,7 +20,7 @@ li {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -40,14 +40,16 @@ li {
     
 }
 
-header {
+header {    
     padding-bottom: 24px;
 
     .profile-avatar {
-        width: 200px;
+        padding: 16px;
+        width: 250px;
         display: block;
         margin: 0 auto 24px;
-        border-radius: 50%;
+        border-radius: 100%;
+        
     }
 }
 
@@ -67,18 +69,16 @@ header {
 }
 
 .projects-list{    
-    margin-top: 16px;
-    display: block;
-
+    margin-top: 16px;   
+    
     &-item {
         align-items: center;
 
-        a {
+        a {            
             
-            text-align: center;
             
             text-decoration: none;
-            background-color: @corDeFundo;
+            background-color: @corDosBotoes;
             padding: 16px 20px;
             display: block;
             margin-bottom: 20px;
@@ -88,6 +88,7 @@ header {
             border: 1px solid;
             transition: all ease .3s;
             font-family: "Dosis", sans-serif;
+            
 
             &:hover{
                 color: #777;
@@ -95,8 +96,8 @@ header {
         }
 
         img{
-            padding: 0 20px;
+            padding: 0 20px;                       
         }
 
-    }
+        }
 }
